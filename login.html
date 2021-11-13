@@ -101,6 +101,9 @@
                                              <a class="nav-link" href="staff.html">staff</a>
                                           </li> -->
                                           <li class="nav-item">
+                                             <a class="nav-link" href="market.html">market</a>
+                                          </li>
+                                          <li class="nav-item">
                                              <a class="nav-link" href="contact.html">Contact Us</a>
                                           </li>
                                           <li class="nav-item active">
@@ -154,16 +157,24 @@
                 <div class="row no-margin h-100">
                     <div class="bg-layer d-flex col-md-4">
                         <div class="login-box row">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-unlock-alt"></i> login</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-user-plus"></i> Register</a>
-                                </li>
-    
-                            </ul>
+                           <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="home" aria-selected="true"><i class="fas fa-unlock-alt"></i> login</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" id="signup-tab" data-toggle="tab" href="#signup" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-user-plus"></i> Register</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" id="admin-login-tab" data-toggle="tab" href="#agent-login" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-unlock-alt"></i> Agent</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" id="admin-signup-tab" data-toggle="tab" href="#agent-signup" role="tab" aria-controls="profile" aria-selected="false"><i class="fas fa-user-plus"></i> Agent Register</a>
+                              </li>
+                           </ul>
                             <div class="tab-content w-100" id="myTabContent">
+
+                              <!-- Customer login -->
+
                                 <div class="tab-pane   fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
                                    <div class="login-tab">
                                     <h3>User login</h3>
@@ -196,13 +207,16 @@
                                         <button class="btn btn-primary">
                                             <i class="fab fa-facebook-f"></i> Login Using Facebook
                                         </button>
-                                    </div>
-                                
-                                   
+                                    </div>    
                                 </div>
+
+                                <!-- Customer login end -->
+
+                                <!-- Customer Register -->
+
                                 <div class="tab-pane fade" id="signup" role="tabpanel" aria-labelledby="profile-tab">
                                      <div class="login-tab">
-                                     <h3>User login</h3>
+                                     <h3>Register as a customer</h3>
                                     
                                    <div class="form-row">
                                       
@@ -228,7 +242,80 @@
                                    </div>
                                     </div>
                                 </div>
-    
+
+                                <!-- Customer Register end -->
+
+                                <!-- Agent login -->
+
+                                <div class="tab-pane   fade" id="agent-login" role="tabpanel" aria-labelledby="home-tab">
+                                 <div class="login-tab">
+                                  <h3>Agent login</h3>
+                                  
+                                 <div class="form-row">
+                                    
+                                     <input placeholder="Enter Username" class="form-control form-control-sm" type="text">
+                                 </div>
+                                 
+                                 <div class="form-row">
+                                    
+                                     <input placeholder="Enter Password" class="form-control form-control-sm" type="text">
+                                 </div>
+                                 
+                                  <div class=" forget">
+                                    
+                                     <p> forget password ?</p>
+                                     <button id="myButton" class="btn btn-success btn-sm">Click to Login</button>
+                                     <script type="text/javascript">
+                                        document.getElementById("myButton").onclick = function () {
+                                           location.href = "Lobby.html";
+                                        };
+                                     </script>
+                                 </div>
+                                  </div>
+                                  <div class="social-login">
+                                      <button class="btn btn-danger">
+                                          <i class="fab fa-google"></i> Login Using Google
+                                      </button>
+                                      <button class="btn btn-primary">
+                                          <i class="fab fa-facebook-f"></i> Login Using Facebook
+                                      </button>
+                                  </div>    
+                              </div>
+
+                              <!-- Agent login end -->
+
+                                <!-- Agent Register -->
+
+                                 <div class="tab-pane fade" id="agent-signup" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="login-tab">
+                                       <h3>Register as an agent</h3>
+                                    
+                                       <div class="form-row">
+                                          
+                                          <input placeholder="Enter Full Name" class="form-control form-control-sm" type="text">
+                                       </div>
+                                       
+                                       <div class="form-row">
+                                          
+                                          <input placeholder="Enter Email Address" class="form-control form-control-sm" type="text">
+                                       </div>
+                                       <div class="form-row">
+                                          
+                                          <input placeholder="Enter Password" class="form-control form-control-sm" type="text">
+                                       </div>
+                                       <div class="form-row">
+                                          
+                                          <input placeholder="Confirm Password" class="form-control form-control-sm" type="text">
+                                       </div>
+                                       <div class=" forget">
+                                          <br>
+                                          
+                                          <button class="btn btn-success w-100 btn-sm">Click to Signup</button>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <!-- Agent Register end -->
                             </div>
 
     
