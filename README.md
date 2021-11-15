@@ -1,3 +1,3 @@
 # Kisaan
 A farmer's e-marketing portal
-https://bannump.github.io/Kisaan/index.html
+Goto the website - https://bannump.github.io/Kisaan/index.html
